@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Being Orange – Web Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="nav"><a class="logo" href="#home">BO<i>/</i></a>
+<ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#learning">Learning</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="btn solid" href="#contact">Let’s connect</a></header>
+
+<main id="home">
+<div class="hero">
+<div>
+<p class="status">OPEN TO LEARNING, BUILDING, CONNECTING</p>
+<h1>Web development <span>built step by step.</span></h1>
+<p class="lead">I’m Being Orange, a self-taught web developer learning HTML, CSS, JavaScript and React by building real things in public. I’m looking for my first project, internship or junior role.</p>
+<div class="row"><a class="btn solid" href="#projects">View my work</a><a class="btn" href="#about">About me</a><a class="btn" href="mailto:wczaraw@gmail.com">Email me</a></div>
+</div>
+<aside class="card-id" aria-label="Profile card"><div class="shot" aria-hidden="true">BO</div><p>BEING ORANGE / WEB DEVELOPER<br>Chattogram, Bangladesh</p></aside>
+</div>
+<div class="pillars"><div><b>Learner</b><span>Daily practice</span></div><div><b>Builder</b><span>Small real projects</span></div><div><b>Frontend</b><span>Clean, responsive UI</span></div><div><b>Open</b><span>Learning in public</span></div></div>
+
+<section id="about">
+<h2>Honest about <span>where I am.</span></h2>
+<p class="sub">I don’t have a long client list yet. What I have is steady practice, projects I’m building right now, and a clear plan for the next six months.</p>
+<div class="cards">
+<div class="card"><h3>Learning in public</h3><p>I’ll link each project to its repository once it’s started, so you can see my progress as it happens.</p></div>
+<div class="card"><h3>Professional profile</h3><p>The best way to reach me is email. GitHub and LinkedIn links will be added here as soon as they’re ready.</p></div>
+<div class="card"><h3>How I work</h3><p>I start small, ship something that works, then improve it: accessible markup, responsive layouts, readable code.</p></div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills <span>and what I’m learning.</span></h2>
+<p class="sub">Solid ground first, then the next layer. Dashed tags are still in progress.</p>
+<div class="tags"><span>HTML5</span><span>CSS3</span><span>Flexbox / Grid</span><span>JavaScript (ES6+)</span><span>Git &amp; GitHub</span><span>Responsive design</span><span class="l">React</span><span class="l">TypeScript</span><span class="l">Node.js</span><span class="l">REST APIs</span><span class="l">Tailwind CSS</span></div>
+</section>
+
+<section id="projects">
+<h2>Projects <span>in progress, with receipts.</span></h2>
+<p class="sub">Each card shows its real status, so you can see what’s being built and what’s coming next.</p>
+<div class="scroller">
+<article class="proj"><div class="pv"><span class="chip">IN PROGRESS</span><span>01</span></div><div class="pb"><h3>This portfolio</h3><p>The site you’re on, built from scratch in plain HTML, CSS and JavaScript. Next step: add real content and deploy.</p><small>HTML · CSS · JavaScript</small></div></article>
+<article class="proj"><div class="pv"><span class="chip">IN PROGRESS</span><span>02</span></div><div class="pb"><h3>Task tracker</h3><p>A to-do app with filters and local saving, built to practice DOM events, state and accessible forms.</p><small>JavaScript · Local storage</small></div></article>
+<article class="proj"><div class="pv"><span class="chip plan">PLANNED</span><span>03</span></div><div class="pb"><h3>Weather dashboard</h3><p>Fetch live data from a public weather API and show a clean forecast. Focus: async code and error handling.</p><small>React · REST API</small></div></article>
+<article class="proj"><div class="pv"><span class="chip plan">PLANNED</span><span>04</span></div><div class="pb"><h3>Local business site</h3><p>A small, fast website for a shop or service near me, built to learn working with a real client’s needs.</p><small>Responsive design · SEO basics</small></div></article>
+</div>
+</section>
+
+<section id="learning">
+<h2>What I’m working <span>toward next.</span></h2>
+<p class="sub">A simple roadmap I update as I go.</p>
+<div class="tl">
+<div class="now"><small>NOW</small><b>JavaScript fundamentals</b><p>DOM, events, fetch and async code.</p></div>
+<div><small>NEXT</small><b>React</b><p>Components, hooks and state.</p></div>
+<div><small>THEN</small><b>Backend basics</b><p>Node.js, Express and a database.</p></div>
+<div><small>GOAL</small><b>First real project</b><p>Ship for a client or an internship.</p></div>
+</div>
+</section>
+
+<section id="terminal">
+<h2>Ask the <span>terminal.</span></h2>
+<p class="sub">Try a command and see how it answers.</p>
+<div class="term"><div class="bar">visitor@portfolio ~ </div><div id="out" aria-live="polite">Type “help” to see commands.</div>
+<form id="tf"><span aria-hidden="true">$</span><input id="ti" aria-label="Terminal command" autocomplete="off" spellcheck="false"></form></div>
+<div class="hints"><button type="button">help</button><button type="button">about</button><button type="button">skills</button><button type="button">status</button><button type="button">contact</button></div>
+</section>
+
+<section id="contact">
+<h2>Let’s <span>connect.</span></h2>
+<div class="contact">
+<p class="sub">If you have a small project, an internship or advice for a beginner, I’d like to hear from you. This form opens an email draft.</p>
+<form id="cf">
+<label>NAME<input class="f" id="n" required></label>
+<label>EMAIL<input class="f" id="e" type="email" required></label>
+<label>MESSAGE<textarea id="m" required></textarea></label>
+<button class="btn solid" type="submit">Open email draft</button>
+</form>
+</div>
+</section>
+
+<footer><span>© 2026 Being Orange. Built with HTML, CSS and JavaScript.</span><button id="theme" type="button">Switch theme</button></footer>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
