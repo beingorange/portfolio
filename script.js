@@ -38,3 +38,21 @@ c.addEventListener('mouseleave',function(){c.style.transform=''});
 var tio=new IntersectionObserver(function(es){if(es[0].isIntersecting){tio.disconnect();var t='help',i=0;(function k(){if(i<=t.length){ti.value=t.slice(0,i++);setTimeout(k,140)}else setTimeout(function(){run(t);ti.value=''},350)})()}},{threshold:.6});
 tio.observe(document.querySelector('.term'));
 })();
+
+/* Accessible compact navigation for tablet and mobile */
+(function(){
+var header=document.querySelector('header.nav');
+var toggle=document.querySelector('.menu-toggle');
+var menu=document.getElementById('primary-navigation');
+if(!header||!toggle||!menu)return;
+function closeMenu(){header.classList.remove('menu-open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation')}
+toggle.addEventListener('click',function(){
+var open=toggle.getAttribute('aria-expanded')!=='true';
+header.classList.toggle('menu-open',open);
+toggle.setAttribute('aria-expanded',String(open));
+toggle.setAttribute('aria-label',open?'Close navigation':'Open navigation');
+});
+menu.querySelectorAll('a').forEach(function(link){link.addEventListener('click',closeMenu)});
+document.addEventListener('keydown',function(event){if(event.key==='Escape')closeMenu()});
+window.addEventListener('resize',function(){if(window.innerWidth>800)closeMenu()});
+})();
