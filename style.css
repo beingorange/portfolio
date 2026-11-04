@@ -16,7 +16,7 @@ header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;margin:.8r
 .hero{display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;align-items:center;padding:5rem 0 4rem}
 .status{font:500 .78rem var(--m);color:var(--accent);margin:0 0 1rem}
 .status:before{content:"";display:inline-block;width:.5rem;height:.5rem;border-radius:50%;background:var(--accent);margin-right:.6rem}
-h1{font:700 clamp(2.8rem,8vw,5.8rem)/.98 var(--f);letter-spacing:-.04em;margin:0 0 1.5rem}
+h1{font:700 clamp(2.5rem,6.5vw,4.8rem)/.98 var(--f);letter-spacing:-.04em;margin:0 0 1.5rem}
 h1 span{display:block;color:transparent;-webkit-text-stroke:1.5px var(--muted)}
 .lead{color:var(--muted);max-width:34rem;margin:0 0 2rem}
 .row{display:flex;gap:.7rem;flex-wrap:wrap}
@@ -172,7 +172,7 @@ h1{animation:none}
   .hero{grid-template-columns:minmax(0,1fr);gap:1.5rem;padding:2.6rem 0 2rem}
   .hero>div{min-width:0}
   .status{font-size:.66rem;letter-spacing:.01em;line-height:1.55;overflow-wrap:anywhere}
-  h1{font-size:clamp(2.35rem,10.5vw,3.35rem);line-height:1.02;letter-spacing:-.045em}
+  h1{font-size:clamp(2.1rem,9.5vw,3rem);line-height:1.02;letter-spacing:-.045em}
   h1 span{display:block;margin-top:.12em}
   .lead{font-size:1rem;line-height:1.7;max-width:none;margin-bottom:1.35rem}
   .row{display:flex;flex-direction:column;gap:.65rem}
@@ -232,7 +232,7 @@ h1{animation:none}
   header.nav{padding:.55rem .6rem}
   .logo{font-size:.9rem}
   header.nav>.btn{font-size:.76rem;padding:.5rem .55rem}
-  h1{font-size:2.25rem}
+  h1{font-size:2rem}
   .pillars{gap:.8rem .5rem}
 }
 
